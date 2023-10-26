@@ -1,5 +1,6 @@
 class PublicController < ApplicationController
   def index
-    @users = User.all
+    @q = User.ransack(params[:q])
+    @users = @q.result.order(:created_at)
   end
 end
