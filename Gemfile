@@ -73,3 +73,11 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+gem "devise", "~> 4.9"
+
+gem "faker", "~> 3.2"
+
+gem "ransack", "~> 4.1"
+
+gem "kaminari", "~> 1.2"
